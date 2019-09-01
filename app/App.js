@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
 
-class App extends React.Component {
-    render () {
-        return (
-            <div className={'app'}>
-                This is App.js
-            </div>
-        )
-    }
+import RootScreen from './Root.screen';
+
+class App extends React.PureComponent {
+  render() {
+    return (
+      <div className="app">
+        <RootScreen />
+      </div>
+    );
+  }
 }
 
 export default App;
