@@ -1,19 +1,19 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-class RootScreen extends PureComponent {
+class Root extends PureComponent {
   render() {
     const { string } = this.props;
-    return <div>{string}</div>;
+    return <div style={{ display: 'flex', height: '100vh' }}>{string}</div>;
   }
 }
 
-RootScreen.propTypes = {
+Root.propTypes = {
   string: PropTypes.string
 };
 
-RootScreen.defaultProps = {
+Root.defaultProps = {
   string: 'This is root screen'
 };
 
-export default RootScreen;
+export default Root;
